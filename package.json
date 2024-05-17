@@ -1,0 +1,43 @@
+{
+  "name": "penna-repo",
+  "type": "module",
+  "version": "2.0.0",
+  "packageManager": "pnpm@9.1.1",
+  "description": "this is multi js framework",
+  "author": "aibayanyu20 <aibayanyu@qq.com>",
+  "license": "Apache-2.0",
+  "keywords": [],
+  "main": "dist/node/index.js",
+  "types": "dist/node/index.d.ts",
+  "scripts": {
+    "dev": "penna play --host --run=src",
+    "dev:components": "cross-env DEBUG=unplugin-vue-components:* penna play --host --run=src",
+    "build": "penna play build",
+    "preview": "penna play preview"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.17.0",
+    "@pennajs/kit": "1.1.0-beta.10",
+    "@types/node": "^20.12.11",
+    "@types/nprogress": "^0.2.3",
+    "@volar/typescript": "^2.2.2",
+    "@vue/language-core": "^2.0.17",
+    "bumpp": "^9.4.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "esno": "^4.7.0",
+    "npm-run-all": "^4.1.5",
+    "nprogress": "^0.2.0",
+    "penna": "1.1.0-beta.27",
+    "pinia": "^2.1.7",
+    "tsup": "^8.0.2",
+    "turbo": "^1.13.3",
+    "typescript": "^5.4.5",
+    "unbuild": "^2.0.0",
+    "unocss": "^0.60.2",
+    "vite": "^5.2.11",
+    "vitest": "^1.6.0",
+    "vue": "^3.4.21",
+    "vue-tsc": "^2.0.17"
+  }
+}
