@@ -1,0 +1,39 @@
+{
+  "name": "@pennajs/axios",
+  "type": "module",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "this is penna module test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/penna-team/core.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./module": {
+      "types": "./dist/module.d.ts",
+      "import": "./dist/module.js",
+      "default": "./dist/module.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/module.js",
+  "types": "dist/module.d.ts",
+  "scripts": {
+    "build": "penna compile"
+  },
+  "peerDependencies": {
+    "axios": ">=1.2.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+  }
+}
