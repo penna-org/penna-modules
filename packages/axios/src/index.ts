@@ -4,6 +4,10 @@ import { createRequest } from './runtime'
 import type { InternalRequestConfig, RequestConfig } from './runtime/typing.ts'
 
 export {
+  useRequest
+} from './runtime'
+
+export {
   createRequest
 }
 
@@ -20,7 +24,7 @@ export function defineAxiosRequestMiddleware(fn: HandleAxiosRequest) {
   return definePennaMiddleware('axios:request', fn)
 }
 
-export function defineAxiosRespsonseMiddleware(fn: HandleAxiosResponse) {
+export function defineAxiosResponseMiddleware(fn: HandleAxiosResponse) {
   return definePennaMiddleware('axios:response', fn)
 }
 

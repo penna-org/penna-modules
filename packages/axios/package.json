@@ -26,7 +26,8 @@
   "main": "dist/module.js",
   "types": "dist/module.d.ts",
   "scripts": {
-    "build": "penna compile"
+    "build": "penna compile",
+    "prepublish": "pnpm build"
   },
   "peerDependencies": {
     "axios": ">=1.2.0"

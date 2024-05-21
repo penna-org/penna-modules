@@ -10,7 +10,11 @@ export default definePennaModule({
     const resolver = createResolver(import.meta.url)
     addEntryFile(resolver.resolve('./entry'))
     addImport('@pennajs/axios', [
-      'useRequest'
+      'useRequest',
+      'defineAxiosRequestMiddleware',
+      'defineAxiosResponseMiddleware',
+      'defineAxiosRequestErrorMiddleware',
+      'defineAxiosResponseErrorMiddleware'
     ])
   },
 })

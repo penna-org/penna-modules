@@ -21,13 +21,14 @@
   "main": "dist/module.js",
   "types": "dist/module.d.ts",
   "scripts": {
-    "build": "penna compile"
+    "build": "penna compile",
+    "prepublish": "pnpm build"
   },
   "peerDependencies": {
     "pinia": ">=2.0.0"
   },
   "dependencies": {
-    "@pennajs/kit": "1.1.0-beta.10"
+
   },
   "devDependencies": {
     "pinia": "^2.1.7"
