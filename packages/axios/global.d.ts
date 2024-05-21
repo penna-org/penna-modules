@@ -1,25 +1,25 @@
-import type { AxiosInstance } from 'axios'
+import type { AxiosDefaults, AxiosInstance, AxiosResponse } from 'axios'
 
 export {}
 declare module 'penna'{
   import type { HookResult } from 'penna'
-  import type { AxiosDefaults } from 'axios'
 
   interface PennaHooks {
-    'request:options': (options: AxiosDefaults) => HookResult
-    'request:ready': (request: AxiosInstance) => HookResult
-    'request:before': () => HookResult
-    'request:before-error': () => HookResult
-    'request:after': () => HookResult
-    'request:after-error': () => HookResult
+    'axios:options': (options: AxiosDefaults) => HookResult
+    'axios:ready': (request: AxiosInstance) => HookResult
+    'axios:request-before': (config) => HookResult
+    'axios:request': (config: any) => HookResult
+    'axios:request-error': (error: any) => HookResult
+    'axios:response': (response: AxiosResponse) => HookResult
+    'axios:response-error': (error: any) => HookResult
   }
 }
 
 declare module '@pennajs/kit'{
   interface PennaMiddlewareHandle {
-    'request:before': () => any
-    'request:before-error': () => any
-    'request:after': () => any
-    'request:after-error': () => any
+    'axios:request': (config: any) => any
+    'axios:request-error': (error: any) => any
+    'axios:response': (response: AxiosResponse) => any
+    'axios:response-error': (error: any) => any
   }
 }

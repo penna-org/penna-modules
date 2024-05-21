@@ -7,7 +7,6 @@ export function createRequest(options: CreateAxiosDefaults) {
   const request = axios.create({
     ...options
   })
-
   // 合并参数
   Object.assign(requestInstance, request)
 

@@ -11,6 +11,9 @@ importers:
       '@antfu/eslint-config':
         specifier: ^2.17.0
         version: 2.17.0(@vue/compiler-sfc@3.4.27)(eslint@8.57.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11))
+      '@pennajs/axios':
+        specifier: workspace:*
+        version: link:packages/axios
       '@pennajs/kit':
         specifier: 1.1.0-beta.12
         version: 1.1.0-beta.12(@babel/parser@7.24.5)(@vueuse/core@9.13.0(vue@3.4.27(typescript@5.4.5)))(rollup@3.29.4)(vite@5.2.11(@types/node@20.12.11))(vue@3.4.27(typescript@5.4.5))
