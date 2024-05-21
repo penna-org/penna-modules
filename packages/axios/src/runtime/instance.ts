@@ -1,3 +1,3 @@
 import type { AxiosInstance } from 'axios'
 
-export const requestInstance: AxiosInstance = {}
+export const requestInstance = {} as AxiosInstance

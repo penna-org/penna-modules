@@ -5,9 +5,7 @@ export default definePennaModule({
     name: 'penna-axios',
     configKey: 'axios'
   },
-  defaults: {
-
-  },
+  defaults: {},
   setup() {
     const resolver = createResolver(import.meta.url)
     addEntryFile(resolver.resolve('./entry'))

@@ -8,6 +8,7 @@
     "src/**/*.js",
     "src/**/*.mts",
     "src/**/*.mjs",
-    "tests/**/*.ts"
+    "tests/**/*.ts",
+    "global.d.ts"
   ]
 }
