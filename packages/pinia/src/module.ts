@@ -1,4 +1,4 @@
-import { addEntryFile, createResolver, definePennaModule } from '@pennajs/kit'
+import { addEntryFile, addImportPreset, createResolver, definePennaModule } from '@pennajs/kit'
 
 export default definePennaModule({
   meta: {
@@ -7,6 +7,7 @@ export default definePennaModule({
   },
   setup() {
     const resolver = createResolver(import.meta.url)
+    addImportPreset('pinia')
     addEntryFile(resolver.resolve('./entry'))
   },
 })

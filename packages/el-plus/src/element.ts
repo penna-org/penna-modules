@@ -10,7 +10,7 @@ export default definePennaPlugin({
           resolve: {
             alias: [
               {
-                find: /(element-plus)(?!\/(es|dist|theme-chalk))/,
+                find: /^(element-plus)(?!\/(es|dist|theme-chalk))/,
                 replacement: 'element-plus/es',
               },
             ]

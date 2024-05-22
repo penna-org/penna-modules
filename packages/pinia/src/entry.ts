@@ -1,6 +1,5 @@
 import { definePennaEntry } from '@pennajs/kit/app'
 import { createPinia } from 'pinia'
-import { addImportPreset } from '@pennajs/kit'
 
 export default definePennaEntry({
   setup(penna) {
@@ -8,7 +7,5 @@ export default definePennaEntry({
     penna.hook('app:install', (app) => {
       app.use(pinia)
     })
-    // 添加pinia的自动导入
-    addImportPreset('pinia')
   },
 })
