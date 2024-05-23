@@ -1,7 +1,7 @@
 {
   "name": "@pennajs/axios",
   "type": "module",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.2",
   "publishConfig": {
     "access": "public"
   },
@@ -21,12 +21,14 @@
       "import": "./dist/module.js",
       "default": "./dist/module.js"
     },
+    "./global": "./global.d.ts",
     "./package.json": "./package.json"
   },
   "main": "dist/module.js",
   "types": "dist/module.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "global.d.ts"
   ],
   "scripts": {
     "build": "penna compile",

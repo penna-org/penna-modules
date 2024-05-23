@@ -1,7 +1,7 @@
 {
   "name": "@pennajs/pinia",
   "type": "module",
-  "version": "0.0.1-beta.2",
+  "version": "0.0.1-beta.3",
   "publishConfig": {
     "access": "public"
   },
@@ -20,6 +20,9 @@
   },
   "main": "dist/module.js",
   "types": "dist/module.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "penna compile",
     "prepublish": "pnpm build"
