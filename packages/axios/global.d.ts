@@ -16,10 +16,12 @@ declare module 'penna'{
 }
 
 declare module '@pennajs/kit'{
+  import type { InternalRequestConfig } from '@pennajs/axios'
+
   interface PennaMiddlewareHandle {
-    'axios:request': (config: any) => any
+    'axios:request': (config: InternalRequestConfig) => Promise<InternalRequestConfig> | InternalRequestConfig
     'axios:request-error': (error: any) => any
-    'axios:response': (response: AxiosResponse) => any
+    'axios:response': (response: AxiosResponse) => any | Promise<any>
     'axios:response-error': (error: any) => any
   }
 }

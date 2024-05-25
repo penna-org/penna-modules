@@ -1,7 +1,7 @@
 {
   "name": "@pennajs/axios",
   "type": "module",
-  "version": "0.0.1-beta.2",
+  "version": "0.0.1-beta.3",
   "publishConfig": {
     "access": "public"
   },
@@ -21,7 +21,9 @@
       "import": "./dist/module.js",
       "default": "./dist/module.js"
     },
-    "./global": "./global.d.ts",
+    "./global": {
+      "types": "./global.d.ts"
+    },
     "./package.json": "./package.json"
   },
   "main": "dist/module.js",
