@@ -1,7 +1,7 @@
 {
   "name": "@pennajs/el-plus",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
@@ -24,7 +24,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "penna compile"
+    "build": "penna compile",
+    "prepublish": "pnpm build"
   },
   "peerDependencies": {
     "element-plus": ">=2.5.0"
